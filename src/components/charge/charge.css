@@ -55,3 +55,34 @@
   font-weight: bold;
   float: right;  
 }
+
+.totalToPay{
+  font-size: 1.2em;
+  font-weight: bold;  
+}
+.modifyBtn, .confirmBtn, .chargeBtn{
+  margin: 1vh;
+  padding: 2vh;
+  background-color: #f97c00;
+  border: none;
+  color: white;
+  font-size: 1.2em;
+  border-radius: 1vh;  
+}
+
+.box{
+  display: inline-block;
+  margin-left: -6vh;
+  width: 30vh !important;
+}
+.box label{
+  display: inline-block;
+  text-align: left;
+}
+
+.totalCheck{
+  display: inline-block;
+  position: relative;
+  top: -2.3em;
+  left: 5em;
+}
