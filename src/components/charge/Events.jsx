@@ -34,19 +34,21 @@ class Events extends Component {
     })
   }
 
-  jojo() {
-    console.log(response[0].amigos)
-  }
-
   render() {
     return(
       <div>
-        <div className="ball ballOrange"></div>
-        <div className="ball"></div>
-        <div className="ball"></div>
-        <div>
-          {this.state.myEvents !== [] ? this.showEventsToCharge() : 'Loading...'}
-        </div>
+        {this.state.counter === 1 ? (
+          <FixAmount/>
+        ) : (
+          <div>
+            <div className="ball ballOrange"></div>
+            <div className="ball"></div>
+            <div className="ball"></div>
+            <div>
+              {this.state.myEvents !== [] ? this.showEventsToCharge() : 'Loading...'}
+            </div>
+          </div>
+        )}
       </div>
     )
   }

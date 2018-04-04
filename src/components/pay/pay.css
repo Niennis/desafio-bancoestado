@@ -26,16 +26,32 @@
 .btnSelectFriend {
   background-color: #f97c00;
   color: #fff;
-  margin-top: 9%;
+  margin-top: 15%;
   margin-left: 8%;
   height: 2.5em;
   border-radius: 4px;
   width: 16.5em;
 }
-.box{
-	padding-top: 1.5em;
+.btnSelectFriend2{
+  background-color: #f97c00;
+  color: #fff;
+  margin-top: 25%;
+  margin-left: 8%;
+  height: 2.5em;
+  border-radius: 4px;
+  width: 16.5em;
 }
-
+.boxCommerce{
+	margin-top: 2em;
+  margin-left: 3em;
+}
+.boxCommerce label{
+  margin-left: 0.5em;
+}
+.boxCommerce1 label{
+  position: relative;
+  right: 1.3em;
+}
 .amountAvailable{
   font-size: 0.70em;
   position: relative;
@@ -48,4 +64,45 @@
 }
 .colorCheckbox1{
   margin-top: 3em;
+}
+.colorCheckbox label{
+   position: relative;
+  left: 0.9em;
+}
+
+.boxFriends, .boxFriends2{
+  margin-top: 2em;
+  margin-left: 2em;
+}
+.boxFriends2 label{
+  position: relative;
+  left: 0.7em;
+}
+.containerConfirm{
+  position: relative;
+  left: 0.1em;
+}
+.accountConfirm, .accountConfirm2{
+  font-size: 0.8em;
+}
+.since{
+  margin-top: 2em;
+}
+.until{
+  margin-top: 3em;
+}
+
+.textPay{
+  margin-top: 2em;
+}
+.textPayDetail{
+  margin-top: 2em;
+  font-size: 2em;
+}
+.textPayDate{
+  margin-top: 2em;
+  font-size: 0.7em;
+}
+.exito{
+  margin-top: 4em;
 }

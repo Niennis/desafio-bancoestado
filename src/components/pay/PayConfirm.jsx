@@ -1,23 +1,13 @@
 import React, { Component } from 'react';
 import Checkbox from 'material-ui/Checkbox';
+import Message from './Message';
 import ActionFavorite from 'material-ui/svg-icons/action/favorite';
 import ActionFavoriteBorder from 'material-ui/svg-icons/action/favorite-border';
 import Visibility from 'material-ui/svg-icons/action/visibility';
 import VisibilityOff from 'material-ui/svg-icons/action/visibility-off';
+import './pay.css'
 
-
-const styles = {
-  block: {
-    maxWidth: 250,
-  },
-  checkbox: {
-    marginBottom: 16,
-  },
-};
-
-
-
-class PayDetail extends Component {
+class PayConfirm extends Component {
   constructor() {
     super();//Estamos heredando de otra clase para que llame al contro
     this.state = {
@@ -38,22 +28,27 @@ class PayDetail extends Component {
     return (
       <div>
         {this.state.counter === 2 ? (
-          <div />
+          <Message />
         ) : (
             <div>
 
 <h2 className="title">Confirmar pago</h2>
               <div className='circuloGris'></div>
               <div className='circuloGris'></div>
-              <div className='circuloGris'></div>
               <div className='circulo'></div>
               <div className='circuloGris'></div>
-      <div>
-      <label>Desde
-      <p>Cta. Rut 15173095-3</p>
-      </label>
-      </div>
-      <button className='btnSelectFriend' onClick={this.onButtonClick}>
+      
+              <div className="since">
+       <p>Desde</p>       
+       <p className="accountConfirm">Cta. Rut 15173095 <br/>Monto $20.000 </p>
+       </div>
+
+       <div>
+       <p className='until'>Hasta</p>       
+       <p className="accountConfirm2">Hugo Perez <br/>Cta. Rut 15.763.826 </p>
+       </div>
+      
+      <button className='btnSelectFriend2' onClick={this.onButtonClick}>
           Confirmar pago
       </button>
             </div>
@@ -66,4 +61,4 @@ class PayDetail extends Component {
 
 }
 
-export default PayDetail;
+export default PayConfirm;

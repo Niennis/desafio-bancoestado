@@ -7,7 +7,6 @@ import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import BancoEstadoLogo from './../img/banco-estado-blanco.png';
 // import HomePage from './start/Start.jsx'
 import './header.css';
-
 const Back = (props) => (
   <SvgIcon {...props}>
     <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z" />
@@ -23,7 +22,6 @@ const Back = (props) => (
 // );
 
 class Header extends Component {
-
   onClickBack(event){
     window.location.reload();
   }
@@ -31,11 +29,13 @@ class Header extends Component {
     return (
           <AppBar
             title={<img className= "logo" src={BancoEstadoLogo}/>}
+
             iconElementRight={<IconButton>
               <Back onClick={this.onClickBack.bind(this)}/>
             </IconButton>}
           />
-  )
-}
+    )
+  }
 }
 export default Header;
+

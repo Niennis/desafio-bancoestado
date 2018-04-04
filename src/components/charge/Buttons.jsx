@@ -45,7 +45,7 @@ class Buttons extends Component {
           </div>
         </div>
         ) : this.state.counter === 2 ? (<Events/>
-        ) : this.state.counter === 3 (<div>holi</div>)
+        ) : 'Loading...'
       }      
       </div>
     );

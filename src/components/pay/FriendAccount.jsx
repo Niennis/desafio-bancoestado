@@ -5,7 +5,7 @@ import ActionFavorite from 'material-ui/svg-icons/action/favorite';
 import ActionFavoriteBorder from 'material-ui/svg-icons/action/favorite-border';
 import Visibility from 'material-ui/svg-icons/action/visibility';
 import VisibilityOff from 'material-ui/svg-icons/action/visibility-off';
-
+import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 
 const styles = {
   block: {
@@ -48,26 +48,31 @@ class FriendAccount extends Component {
               <div className='circulo'></div>
               <div className='circuloGris'></div>
               <div className='circuloGris'></div>
-              <div className='circuloGris'></div>
         <div className="colorCheckbox1">
+        <MuiThemeProvider>
         <Checkbox className='boxAccount'
           label="Cuenta Rut"
           style={styles.checkbox}
        />
+       </MuiThemeProvider>
        <p className="amountAvailable">Monto disponible <br/> $50.000</p>
        </div>
        <div className="colorCheckbox">
+       <MuiThemeProvider>
        <Checkbox className='boxAccount'
           label="Cuenta Corriente"
           style={styles.checkbox}
-       />       
+       /> 
+       </MuiThemeProvider>
        <p className="amountAvailable">Monto disponible <br/> $100.000</p>
        </div>
        <div className="colorCheckbox">
+       <MuiThemeProvider>
        <Checkbox className='boxAccount'
           label="Cuenta de Ahorro"
           style={styles.checkbox}
        />
+       </MuiThemeProvider>
        <p className="amountAvailable">Monto disponible <br/> $30.000</p>
       </div>
       <button className='btnSelectFriend' onClick={this.onButtonClick}>

@@ -35,3 +35,38 @@ input[type]{
   border-radius: 0.2em;
   padding: 1em;
 }
+
+.ImgB {
+  width: 8%;
+  margin-left: 11em;
+  margin-top: -3em;
+}
+.contactInfo {
+  padding-top: 2em;
+}
+
+.btnA {
+  background-color: #f97c00;
+  color: #fff;
+  border-radius: 0.1em;
+  height: 2em;
+  width: 10em;
+  border: none;
+}
+
+.btnB {
+  background-color: #5f5b5c;
+  color: #fff;
+  border-radius: 0.1em;
+  height: 2em;
+  width: 10em;
+  border: none;
+  margin-top: 1em;
+}
+
+.nav-contacts {
+  margin-top: 2em;
+}
+label {
+  margin-left: 1em;
+ }
