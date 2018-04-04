@@ -27,7 +27,7 @@ class Header extends Component {
   render() {
     return (
           <AppBar
-            title={<img src={BancoEstadoLogo}/>}
+            title={<img className="logo" src={BancoEstadoLogo}/>}
             iconElementRight={<IconButton>
               <Back onClick={this.onClickBack.bind(this)}/>
             </IconButton>}

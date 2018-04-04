@@ -30,6 +30,7 @@ class FixAmount extends Component {
           <span className="goTo" onClick={this.confirm.bind(this)}>>></span>
           <span className="total">$10.000</span>
         </div>
+        <div></div>
       </div>
     );
   }
