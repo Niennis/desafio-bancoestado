@@ -20,6 +20,7 @@ const Back = (props) => (
 //     title={<img className="logo" src={BancoEstadoLogo}/>}
 //   />
 // );
+
 class Header extends Component {
   onClickBack(event){
     window.location.reload();
@@ -27,12 +28,14 @@ class Header extends Component {
   render() {
     return (
           <AppBar
-            title={<img src={BancoEstadoLogo}/>}
+            title={<img className= "logo" src={BancoEstadoLogo}/>}
+
             iconElementRight={<IconButton>
               <Back onClick={this.onClickBack.bind(this)}/>
             </IconButton>}
           />
-  )
-}
+    )
+  }
 }
 export default Header;
+

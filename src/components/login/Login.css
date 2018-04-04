@@ -1,0 +1,12 @@
+.login-class{
+  background-color: #f97c00;
+  border: none;
+  color: white;
+  padding: 0.8em;
+  border-radius: 0.2em;
+  /* position: fixed;
+  bottom: 1em; */
+  font-size: 1em;
+  align-content: center;
+  margin-top: 14em;
+}

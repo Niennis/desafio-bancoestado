@@ -1,7 +1,9 @@
 // Dependencias
 import React, { Component } from 'react';
 import firebase from '../../firebase.js';
-import HomePage from '../start/Start.jsx'
+import HomePage from '../start/Start.jsx';
+
+import './Login.css';
 
 class Login extends Component {
 
@@ -57,13 +59,13 @@ class Login extends Component {
           <div>
           <div className="User">
             < HomePage />
-            <img width="50" src={this.state.user.photoURL} alt={this.state.displayName} className='UserImg' />
-            Welcome, {this.state.user.displayName}
+            {/* <img width="50" src={this.state.user.photoURL} alt={this.state.displayName} className='UserImg' /> */}
+            {/* Welcome, {this.state.user.displayName} */}
           </div>
           </div>
         ) : (
           <div>
-            <button onClick={this.handleAuth}>Inicio sesión</button>
+            <button className="login-class" onClick={this.handleAuth}>Inicio sesión</button>
           </div>
         )}
 

@@ -12,8 +12,12 @@ import ChargeIcon from 'material-ui/svg-icons/maps/local-atm';
 import Event from 'material-ui/svg-icons/action/event';
 import FontIcon from 'material-ui/FontIcon';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
+import Search from './../../img/contactos.png';
+import GetPay from './../../img/cobrar.png';
+import Paying from './../../img/pagar.png';
+import CreateEvent from './../../img/eventos.png';
+import { Grid, Row, Col } from 'react-flexbox-grid';
 import './start.css';
-
 class HomePage extends Component {
   constructor() {
     super();//Estamos heredando de otra clase para que llame al contro
@@ -29,75 +33,82 @@ class HomePage extends Component {
     this.showPay = this.showPay.bind(this);
     this.showContacts = this.showContacts.bind(this);
   }
-
   showContacts(event) {
     this.setState({
       counter: 4,
     })
   }
-
   showEvent(event) {
     this.setState({
       counter: 2,
     })
   }
-
   showCharge(event) {
     this.setState({
       counter: 3,
     })
   }
-
    showPay(event) {
     this.setState({
       counter: 5,
     })
   }
-
 render() {
   // const { style } = this.state
   return(
     <div>
       {this.state.counter === 1 ? (
       <div className="containerStart">
-        <p className="title">Inicio</p>
+        <p className="title">Bienvenido</p>
         <MuiThemeProvider>
-          <div className="btns">
-            <RaisedButton
-              backgroundColor="#6320BF"
-              icon={<Contact />}
-              onClick={this.showContacts}
-                // style={style}
-              />
-              <p>Contacto</p>
-            </div>
-            <div className="btns">
+         <Grid>
+          <Row>
+            <Col xs={6} md={6}>
+              <div className="btnsHome">
               <RaisedButton
-                backgroundColor="#FF8700"
-                icon={<PayIcon/>}
-                onClick={this.showCharge}
-                // style={style}
-              />
-              <p>Cobrar</p>
-            </div>
-            <div className="btns">
+                icon={<img className="homePageBtn" src={Search}/>}
+                onClick={this.showContacts}
+                  // style={style}
+                />
+                <p>Contacto</p>
+              </div>
+            </Col>
+            <Col xs={6} md={6}>
+              <div className="btnsHome">
+                <RaisedButton
+                  icon={<img className="homePageBtn" src={GetPay}/>}
+                  onClick={this.showCharge}
+                  // style={style}
+                />
+                <p>Cobrar</p>
+              </div>
+            </Col>
+          </Row>
+          <Row>
+            <Col xs={6} md={6}>
+              <div className="btnsHome">
               <RaisedButton
-                backgroundColor="#C80E1B"
-                icon={<ChargeIcon/>}
-                onClick={this.showPay}                
+                icon={<img className="homePageBtn" src={Paying}/>}
+                onClick={this.showPay}
                 // style={style}
               />
               <p>Pagar</p>
             </div>
-            <div className="btns">
+            </Col>
+             <Col xs={6} md={6}>
+            <div className="btnsHome">
               <RaisedButton
-                backgroundColor="#2C4BC5"
-                icon={<Event/>}
+                icon={<img className="homePageBtn" src={CreateEvent}/>}
                 onClick={this.showEvent}
                 // style={style}
               />
               <p>Evento</p>
             </div>
+            </Col>
+          </Row>
+          </Grid>
+
+
         </MuiThemeProvider>
       </div>
       ) : this.state.counter === 2 ?(<Evento/>
